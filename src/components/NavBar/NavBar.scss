@@ -1,0 +1,36 @@
+.navBarMain {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+        &::after {
+            content: "Snehal Garde ";
+            font-size: larger;
+            font-weight: 500;
+        }
+    }
+
+    .navBarLinks {
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
