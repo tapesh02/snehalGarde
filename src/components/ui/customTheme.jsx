@@ -4,10 +4,11 @@ export const customTheme = () => {
     return createTheme({
         palette: {
             primary: {
-                main: "#DD0707",
+                main: "#ef476f",
             },
             secondary: {
-                main: "#F2F2F2",
+                main: "#e4c1cf",
+                contrastText: "#a73262",
             },
         },
         typography: {
