@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.scss";
 
-import logo from "../../assets/logos/logo.svg";
+import logo from "../../assets/logos/Logo3.svg";
 import { Button, Link } from "@mui/material";
 
 const NavBar = () => {
