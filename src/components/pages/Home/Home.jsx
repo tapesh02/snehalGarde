@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+import "./home.scss";
 
 const Home = () => {
-    return <div>Home</div>;
+    return (
+        <>
+            <div className="homeBg">
+                <div className="homeBg2"></div>
+            </div>
+            <div className="">Home</div>
+        </>
+    );
 };
 
 export default Home;

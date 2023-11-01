@@ -4,9 +4,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 0.5rem;
+
     // border: 1px solid red;
 
     .logo {
+        img {
+            background: white;
+            padding: 0.5em;
+            border-radius: 2px;
+        }
         :hover {
             cursor: pointer;
         }
@@ -17,12 +23,19 @@
         gap: 1em;
         justify-content: center;
         align-items: center;
+        backdrop-filter: blur(3px);
 
         li {
             list-style: none;
             a {
                 text-decoration: none;
                 cursor: pointer;
+            }
+            .homeActive {
+                color: white;
+            }
+            .homeNotActive {
+                color: rgb(0, 0, 0);
             }
         }
     }

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 import "./NavBar.scss";
 
@@ -7,6 +7,8 @@ import logo from "../../assets/logos/Logo3.svg";
 import { Button } from "@mui/material";
 
 const NavBar = () => {
+    const location = useLocation();
+
     return (
         <>
             <div className="navBarMain">
@@ -17,16 +19,30 @@ const NavBar = () => {
                 </ul>
                 <ul className="navBarLinks">
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/" className={`${location.pathname === "/" ? "homeActive" : "homeNotActive"}`}>
+                            Home
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about">About </NavLink>
+                        <NavLink
+                            to="/about"
+                            className={`${location.pathname === "/" ? "homeActive" : "homeNotActive"}`}>
+                            About
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/practice">Practice </NavLink>
+                        <NavLink
+                            to="/practice"
+                            className={`${location.pathname === "/" ? "homeActive" : "homeNotActive"}`}>
+                            Practice
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contact">Contact </NavLink>
+                        <NavLink
+                            to="/contact"
+                            className={`${location.pathname === "/" ? "homeActive" : "homeNotActive"}`}>
+                            Contact
+                        </NavLink>
                     </li>
                     <span></span>
                     <NavLink to="/freeConsultation">
