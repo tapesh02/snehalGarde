@@ -11,10 +11,27 @@
 }
 
 .homeBg2 {
-    background-color: rebeccapurple;
+    background-color: rgb(32, 2, 22);
     width: 100dvw;
     height: 100dvh;
     background-size: cover;
-    opacity: 0.3;
+    opacity: 0.85;
     z-index: -1;
+}
+
+.header {
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding-left: 7em;
+    padding-top: 8em;
+    gap: 1em;
+
+    h6 {
+        width: 50%;
+    }
+    h3 {
+        width: 55%;
+    }
 }
