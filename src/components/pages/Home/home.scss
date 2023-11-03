@@ -25,13 +25,23 @@
     box-sizing: border-box;
     flex-direction: column;
     padding-left: 7em;
-    padding-top: 8em;
+    padding-top: 5em;
     gap: 1em;
+
+    &::before {
+        content: "---------------------------- ";
+    }
+
+    &::after {
+        content: " ------------------------------- ";
+    }
 
     h6 {
         width: 50%;
     }
     h3 {
         width: 55%;
+        font-family: "Righteous", sans-serif;
+        letter-spacing: 0.07em;
     }
 }
