@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 0.5rem;
+    width: 100%;
 
     // border: 1px solid red;
 
@@ -23,20 +24,27 @@
         gap: 1em;
         justify-content: center;
         align-items: center;
-        backdrop-filter: blur(3px);
 
         li {
             list-style: none;
             a {
                 text-decoration: none;
                 cursor: pointer;
-            }
-            .homeActive {
                 color: white;
-            }
-            .homeNotActive {
-                color: rgb(0, 0, 0);
+                font-weight: 600;
             }
         }
     }
+}
+
+.mobileNavBarMain {
+    font-size: 0.8em;
+    ul {
+        padding-inline-start: 0;
+        font-size: 0.9em;
+    }
+}
+
+.mobileNavLinks {
+    font-size: 0.9em;
 }

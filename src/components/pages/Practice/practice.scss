@@ -1,0 +1,19 @@
+.practiceBg {
+    background: url("../../../assets/images/herobackground6.png") top center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    z-index: -1;
+}
+.practiceBg2 {
+    background-color: rgb(32, 2, 22);
+    width: 100dvw;
+    height: 100dvh;
+    background-size: cover;
+    opacity: 0.85;
+    z-index: -1;
+}

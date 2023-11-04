@@ -4,8 +4,17 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     // font-family: "Poppins", sans-serif;
+    color: white;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+@import "./components/NavBar/NavBar.scss";
+@import "./components/pages/Home/home.scss";
+@import "./components/pages/About/about.scss";
+@import "./components/pages/Contact/contact.scss";
+@import "./components/pages/FreeConsultation/freeConsultation.scss";
+@import "./components/pages/Error/error.scss";
+@import "./components/pages/Practice/practice.scss";
