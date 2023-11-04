@@ -38,13 +38,15 @@
 }
 
 .mobileNavBarMain {
-    font-size: 0.8em;
     ul {
-        padding-inline-start: 0;
-        font-size: 0.9em;
+        padding-inline-start: 5px;
     }
-}
-
-.mobileNavLinks {
-    font-size: 0.9em;
+    img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    .menuIcon {
+        font-size: 1.8em;
+        padding-top: 0.2em;
+    }
 }

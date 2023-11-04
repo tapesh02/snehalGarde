@@ -1,19 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 import logo from "../../assets/logos/Logo3.svg";
 import logo2 from "../../assets/logos/logo.svg";
 import { Button } from "@mui/material";
+import { BsMenuButtonWideFill } from "react-icons/bs";
+import MobileNav from "./MobileNav";
 
-let deviceWidth = 500;
 const NavBar = () => {
-    const [isMobile, setIsMobile] = useState(false);
-    const handleResize = () => (window.innerWidth < deviceWidth ? setIsMobile(true) : setIsMobile(false));
-
-    useEffect(() => {
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
     return (
         <>
@@ -21,7 +20,7 @@ const NavBar = () => {
                 <div className="navBarMain">
                     <ul className="logo">
                         <NavLink to="/">
-                            <img src={logo} alt={logo} />
+                            <img src={logo} alt="logo" />
                         </NavLink>
                     </ul>
                     <ul className="navBarLinks">
@@ -47,27 +46,12 @@ const NavBar = () => {
                 <div className="navBarMain mobileNavBarMain">
                     <ul className="logo">
                         <NavLink to="/">
-                            <img src={logo2} alt={logo} />
+                            <img src={logo2} alt="logo" />
                         </NavLink>
                     </ul>
-                    <ul className="navBarLinks mobileNavLinks">
-                        <li>
-                            <NavLink to="/">Home</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/about">About</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/practice">Practice</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/contact">Contact</NavLink>
-                        </li>
-                        <span></span>
-                        <NavLink to="/freeConsultation">
-                            <Button variant="contained">Free Consultation</Button>
-                        </NavLink>
-                    </ul>
+                    <div className="menuIcon">
+                        <MobileNav />
+                    </div>
                 </div>
             )}
         </>
