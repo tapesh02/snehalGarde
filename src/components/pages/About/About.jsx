@@ -1,16 +1,36 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import Herobackground from "../../../assets/images/lawyers.jpg";
-import { team } from "../../../assets/data.js";
+import { team, coreValues, experties } from "../../../assets/data.js";
 
 const About = () => {
   const RenderTeamsCards = () => {
     return team.map(({ id, personalImage, coFounder, designation, details }) => (
-      <div className="team-cards-wrapper" key={id}>
+      <div className="cards-wrapper" key={id}>
         <img src={personalImage} alt="co founder snehal" />
         <Typography variant="h5">{coFounder}</Typography>
         <Typography variant="h6">{designation}</Typography>
         <Typography variant="body1">{details}</Typography>
+      </div>
+    ));
+  };
+
+  const RenderValuesCards = () => {
+    return coreValues.map(({ id, valueDescription, valueIcon, valueName }) => (
+      <div className="cards-wrapper value-cards" key={id}>
+        {valueIcon}
+        <Typography variant="h5">{valueName}</Typography>
+        <Typography variant="subtitle1">{valueDescription}</Typography>
+      </div>
+    ));
+  };
+
+  const RenderExpertiesCards = () => {
+    return experties.map(({ id, expertiesName, expertiesIcon, expertiesDescription }) => (
+      <div className="cards-wrapper value-cards experties-cards" key={id}>
+        {expertiesIcon}
+        <Typography variant="h5">{expertiesName}</Typography>
+        <Typography variant="subtitle1">{expertiesDescription}</Typography>
       </div>
     ));
   };
@@ -20,7 +40,7 @@ const About = () => {
       <div className="aboutBg">
         <div className="aboutBg2"></div>
       </div>
-      <div className="about-us-main-wrapper">
+      <section className="about-us-main-wrapper">
         <div className="about-us-content-wrapper">
           <div className="about-us-header">
             <Typography variant="h5">Snehal Garde Law Firm</Typography>
@@ -41,18 +61,45 @@ const About = () => {
         <div className="about-us-hero-image-wrapper">
           <img src={Herobackground} alt="Herobackground" />
         </div>
-      </div>
-      <div className="team-main-wrapper">
-        <div className="team-header-wrapper">
+      </section>
+      {/*Teams section  */}
+      <section className="main-wrapper">
+        <div className="header-wrapper">
           <Typography variant="h4">Meet Our Founding Partners</Typography>
-          <Typography variant="h6">
+          <Typography variant="subtitle1">
             Our team of experienced attorneys is dedicated to providing exceptional legal services.
           </Typography>
         </div>
-        <div className="teams-card-wrapper-main">
+        <div className="card-wrapper-main">
           <RenderTeamsCards />
         </div>
-      </div>
+      </section>
+      {/* Experties Section  */}
+      <section className="main-wrapper value-cards-wrapper experties-cards-wrapper ">
+        <div className="header-wrapper">
+          <Typography variant="h4">Our Expertise</Typography>
+          <Typography variant="subtitle1">
+            Snehal Garde Law Firm, specializes in a wide range of legal disciplines, ensuring we can provide
+            comprehensive solutions to our clients.
+          </Typography>
+        </div>
+        <div className="card-wrapper-main  ">
+          <RenderExpertiesCards />
+        </div>
+      </section>
+      {/* Value Section  */}
+      <section className="main-wrapper value-cards-wrapper ">
+        <div className="header-wrapper">
+          <Typography variant="h4">Our Core Values</Typography>
+          <Typography variant="subtitle1">
+            At Snehal Garde Law Firm, we are guided by a set of core values that shape our approach to legal services
+            and client relationships.
+          </Typography>
+        </div>
+        <div className="card-wrapper-main ">
+          <RenderValuesCards />
+        </div>
+      </section>
     </>
   );
 };

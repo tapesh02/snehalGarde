@@ -10,7 +10,7 @@
   z-index: -1;
 }
 .aboutBg2 {
-  background-color: rgb(32, 2, 22);
+  background-color: #200216;
   width: 100dvw;
   height: 100dvh;
   background-size: cover;
@@ -55,32 +55,35 @@
   }
 }
 
-.team-main-wrapper {
+.main-wrapper {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  background-color: #4f1e3e76;
+  padding: 5em;
 
-  .team-header-wrapper {
+  .header-wrapper {
     text-align: center;
     margin: 1em 0;
 
     h4 {
       font-weight: 900;
-      font-size: 3em;
+      font-size: 2.2em;
     }
 
     h6 {
       opacity: 0.7;
+      margin: 1em;
     }
   }
 
-  .teams-card-wrapper-main {
+  .card-wrapper-main {
     display: flex;
     width: 100%;
     box-sizing: border-box;
     justify-content: space-evenly;
 
-    .team-cards-wrapper {
+    .cards-wrapper {
       display: flex;
       width: 30%;
       padding: 1em;
@@ -103,5 +106,24 @@
         opacity: 0.7;
       }
     }
+  }
+}
+
+.value-cards-wrapper {
+  background-color: #4f1e3e76;
+  .card-wrapper-main .value-cards {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.experties-cards-wrapper {
+  background-color: #200216;
+
+  .experties-cards {
+    background-color: #fff;
+    color: #200216;
+    border-radius: 5px;
   }
 }
