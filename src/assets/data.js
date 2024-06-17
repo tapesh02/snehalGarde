@@ -78,3 +78,65 @@ export const experties = [
       "Our family attorneys have extensive experience in commercial and residential transactions, zoning, and development.",
   },
 ];
+
+export const familyLaw = [
+  {
+    id: 1,
+    familyLawTitle: "Divorce",
+    familyLawDescription:
+      "Our experienced attorneys will guide you through the divorce process, ensuring your rights are protected.",
+  },
+  {
+    id: 2,
+    familyLawTitle: "Child Custody",
+    familyLawDescription: "We will fight for your parental rights and the best interests of your children.",
+  },
+  {
+    id: 3,
+    familyLawTitle: "Adoption",
+    familyLawDescription:
+      "Our team will guide you through the complex adoption process, ensuring a smooth and successful outcome.",
+  },
+];
+
+export const civilLaw = [
+  {
+    id: 1,
+    civilLawTitle: "Personal Injury",
+    civilLawDescription:
+      "If you've been injured due to someone else's negligence, we will fight to get you the compensation you deserve.",
+  },
+  {
+    id: 2,
+    civilLawTitle: "Real Estate",
+    civilLawDescription:
+      "Our team can assist with a variety of real estate matters, including property disputes, transactions, and zoning issues.",
+  },
+  {
+    id: 3,
+    civilLawTitle: "Contract Disputes",
+    civilLawDescription:
+      "We will help you navigate contract disputes and negotiate the best possible outcome for your case.",
+  },
+];
+
+export const corporateLaw = [
+  {
+    id: 1,
+    corporateLawTitle: "Entity Formation",
+    corporateLawDescription:
+      "We can assist with the formation of corporations, limited liability companies, partnerships, and other business entities.",
+  },
+  {
+    id: 2,
+    corporateLawTitle: "Mergers & Acquisitions",
+    corporateLawDescription:
+      "Our team can guide you through the complex process of mergers and acquisitions, ensuring your interests are protected.",
+  },
+  {
+    id: 3,
+    corporateLawTitle: "Regulatory Compliance",
+    corporateLawDescription:
+      "We can help your business navigate the ever-changing landscape of regulations and ensure your compliance.",
+  },
+];

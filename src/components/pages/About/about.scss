@@ -21,18 +21,19 @@
 .about-us-main-wrapper {
   box-sizing: border-box;
   display: flex;
-  padding: 0 3.5em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em 10em;
 
   .about-us-content-wrapper {
     width: 50%;
-    padding: 1em;
     display: flex;
     flex-direction: column;
     gap: 1em;
 
     .about-us-header {
-      h5 {
-        font-weight: 600;
+      h3 {
+        font-weight: 900;
       }
     }
     h6 {
@@ -43,8 +44,7 @@
   }
 
   .about-us-hero-image-wrapper {
-    width: 35em;
-    padding: 1em;
+    width: 40%;
 
     img {
       border-radius: 10px;

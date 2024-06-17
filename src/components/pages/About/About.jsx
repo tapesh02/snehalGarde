@@ -43,7 +43,7 @@ const About = () => {
       <section className="about-us-main-wrapper">
         <div className="about-us-content-wrapper">
           <div className="about-us-header">
-            <Typography variant="h5">Snehal Garde Law Firm</Typography>
+            <Typography variant="h3">Snehal Garde Law Firm</Typography>
           </div>
           <div className="about-us-content">
             <Typography variant="h6">
