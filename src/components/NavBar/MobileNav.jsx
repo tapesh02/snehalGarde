@@ -1,5 +1,4 @@
-// @ts-nocheck
-import * as React from "react";
+import React from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -11,7 +10,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 
-import { AiFillHome, AiFillContacts, AiOutlineTeam } from "react-icons/ai";
+import { AiFillHome, AiOutlineTeam } from "react-icons/ai";
 import { BsFillAwardFill, BsMenuButtonWideFill } from "react-icons/bs";
 
 export default function MobileNav() {
@@ -49,15 +48,6 @@ export default function MobileNav() {
               <AiOutlineTeam />
             </ListItemIcon>
             <ListItemText primary="About" />
-          </ListItemButton>
-        </ListItem>
-
-        <ListItem disablePadding>
-          <ListItemButton component={Link} to="/contact">
-            <ListItemIcon>
-              <AiFillContacts />
-            </ListItemIcon>
-            <ListItemText primary="Contact" />
           </ListItemButton>
         </ListItem>
 
