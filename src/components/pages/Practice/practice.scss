@@ -9,6 +9,7 @@
   height: 100dvh;
   z-index: -1;
 }
+
 .practiceBg2 {
   background-color: #200216;
   width: 100dvw;
@@ -23,6 +24,7 @@
   display: flex;
   justify-content: space-between;
   padding: 5em 10em;
+
   .practice-header-wrapper {
     width: 45%;
     display: flex;
@@ -120,4 +122,104 @@
 
 .civil-law-main {
   background-color: #200216;
+}
+
+/* Media Queries for Tablet */
+@media (max-width: 1024px) {
+  .practice-hero-wrapper {
+    flex-direction: column;
+    padding: 3em 5em;
+
+    .practice-header-wrapper,
+    .practice-hero-image {
+      width: 100%;
+      text-align: center;
+    }
+
+    .practice-hero-image {
+      height: auto; /* Allow height to adjust automatically */
+      margin-top: 2em;
+    }
+  }
+
+  .practice-section-wrapper-main {
+    padding: 2em 5em;
+
+    .practice-section-header-wrapper {
+      :nth-child(1) {
+        padding: 0.2em 0.5em;
+        font-size: 0.9em;
+      }
+      :nth-child(2) {
+        font-size: 1.2em;
+      }
+      :nth-child(3) {
+        font-size: 0.9em;
+        width: 90%;
+      }
+    }
+
+    .practice-section-content-wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      .section-content,
+      .section-image {
+        width: 90%;
+        padding: 1.5em;
+      }
+    }
+  }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .practice-hero-wrapper {
+    padding: 2em 1em;
+
+    .practice-header-wrapper {
+      width: 100%;
+      text-align: center;
+      h3 {
+        font-size: 1.5em;
+      }
+    }
+
+    .practice-hero-image {
+      height: auto; /* Allow height to adjust automatically */
+      margin-top: 2em;
+    }
+  }
+
+  .practice-section-wrapper-main {
+    padding: 1em;
+
+    .practice-section-header-wrapper {
+      :nth-child(1) {
+        padding: 0.2em 0.5em;
+        font-size: 0.8em;
+      }
+      :nth-child(2) {
+        font-size: 1em;
+      }
+      :nth-child(3) {
+        font-size: 0.8em;
+        width: 100%;
+      }
+    }
+
+    .practice-section-content-wrapper {
+      flex-direction: column;
+
+      .section-content,
+      .section-image {
+        width: 100%;
+        padding: 1em;
+      }
+
+      .section-content {
+        padding-bottom: 2em; /* Ensure enough space for content */
+      }
+    }
+  }
 }

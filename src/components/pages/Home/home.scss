@@ -1,61 +1,137 @@
 .homeBg {
-    background: url("../../../assets/images/herobackground.png") top center fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100dvw;
-    height: 100dvh;
-    z-index: -1;
+  background: url("../../../assets/images/herobackground.png") top center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: -1;
 }
 
 .homeBg2 {
-    background-color: rgb(32, 2, 22);
-    width: 100dvw;
-    height: 100dvh;
-    background-size: cover;
-    opacity: 0.85;
-    z-index: -1;
+  background-color: rgba(32, 2, 22, 0.85); /* Use RGBA for opacity */
+  width: 100dvw;
+  height: 100dvh;
+  z-index: -1;
 }
 
 .header {
-    color: white;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    padding-left: 7em;
-    padding-top: 5em;
-    gap: 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 7em;
+  padding-top: 5em;
+  gap: 1em;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 60%;
 
-    &::before {
-        content: "---------------------------- ";
-    }
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: white;
+  }
 
-    &::after {
-        content: " ------------------------------- ";
+  h6 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  h3 {
+    width: 100%;
+    font-family: "Righteous", sans-serif;
+    letter-spacing: 0.07em;
+    font-size: 2.5rem;
+  }
+}
+
+/* Media Queries for Tablet */
+@media (max-width: 1024px) {
+  .header {
+    padding: 4em 3em;
+    max-width: 80%;
+
+    h3 {
+      font-size: 2.2rem;
     }
 
     h6 {
-        width: 50%;
+      font-size: 0.9rem;
     }
-    h3 {
-        width: 55%;
-        font-family: "Righteous", sans-serif;
-        letter-spacing: 0.07em;
-    }
+  }
 }
 
-.mobileheader {
-    padding: 1em;
-    padding-left: 2em;
-    padding-top: 1em;
-    .mobileh6 {
-        width: auto;
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .header {
+    padding: 2em 1.5em;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+
+    &::before,
+    &::after {
+      content: "------------------------";
     }
 
-    .mobileh3 {
-        width: auto;
-        font-size: 2.6rem;
+    h3 {
+      width: auto;
+      font-size: 2rem;
     }
+
+    h6 {
+      width: auto;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+/* Improved mobileheader class */
+.mobileheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 1em;
+  box-sizing: border-box;
+  text-align: center;
+
+  .mobileh6 {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1em;
+  }
+
+  .mobileh3 {
+    width: 100%;
+    font-size: 2.4rem;
+    font-family: "Righteous", sans-serif;
+    letter-spacing: 0.07em;
+  }
+}
+
+/* General styles for a modern look */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 0 2em;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0.5em 0;
+  opacity: 0.8;
 }
