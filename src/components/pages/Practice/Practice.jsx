@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@mui/material";
+import { Typography, Box, Grid } from "@mui/material";
 import { familyLaw, civilLaw, corporateLaw } from "../../../assets/data.js";
 
 const Practice = () => {
@@ -38,22 +38,26 @@ const Practice = () => {
       <div className="practiceBg">
         <div className="practiceBg2"></div>
       </div>
-      <div className="practice-hero-wrapper">
-        <div className="practice-header-wrapper">
-          <Typography variant="h3">Trusted Legal Expertise for Your Family, Civil, and Corporate Needs</Typography>
-          <Typography variant="h6">
-            At Snehal Garde Law Firm, we provide comprehensive legal services to individuals and businesses in family
-            law, civil law, and corporate law. Our team of experienced attorneys is dedicated to protecting your rights
-            and achieving the best possible outcomes for your legal matters.
-          </Typography>
-        </div>
-        <div className="practice-hero-image">
-          <img
-            src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="practice"
-          />
-        </div>
-      </div>
+      <Box className="practice-hero-wrapper">
+        <Grid container spacing={4}>
+          <Grid item xs={12} md={6} className="practice-header-wrapper">
+            <Typography variant="h3" component="h1" gutterBottom>
+              Trusted Legal Expertise for Your Family, Civil, and Corporate Needs
+            </Typography>
+            <Typography variant="body1" paragraph>
+              At Snehal Garde Law Firm, we provide comprehensive legal services to individuals and businesses in family
+              law, civil law, and corporate law. Our team of experienced attorneys is dedicated to protecting your
+              rights and achieving the best possible outcomes for your legal matters.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={6} className="practice-hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="practice"
+            />
+          </Grid>
+        </Grid>
+      </Box>
       {/* Family Law */}
       <section className="practice-section-wrapper-main">
         <div className="practice-section-header-wrapper">
