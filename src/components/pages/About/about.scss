@@ -9,6 +9,7 @@
   height: 100dvh;
   z-index: -1;
 }
+
 .aboutBg2 {
   background-color: #200216;
   width: 100dvw;
@@ -125,5 +126,90 @@
     background-color: #fff;
     color: #200216;
     border-radius: 5px;
+  }
+}
+
+/* Media Queries for Tablet */
+@media (max-width: 1024px) {
+  .about-us-main-wrapper {
+    flex-direction: column;
+    padding: 2em 4em;
+
+    .about-us-content-wrapper,
+    .about-us-hero-image-wrapper {
+      width: 100%;
+    }
+
+    .about-us-hero-image-wrapper {
+      margin-top: 2em;
+    }
+  }
+
+  .main-wrapper {
+    padding: 3em;
+
+    .card-wrapper-main {
+      flex-direction: column;
+
+      .cards-wrapper {
+        width: 80%;
+        margin-bottom: 2em;
+      }
+    }
+  }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .about-us-main-wrapper {
+    padding: 1em 2em;
+
+    .about-us-content-wrapper,
+    .about-us-hero-image-wrapper {
+      width: 100%;
+    }
+
+    .about-us-content-wrapper {
+      text-align: center;
+
+      .about-us-header {
+        h3 {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+
+  .main-wrapper {
+    padding: 2em;
+
+    .header-wrapper {
+      h4 {
+        font-size: 1.8em;
+      }
+
+      h6 {
+        font-size: 1em;
+      }
+    }
+
+    .card-wrapper-main {
+      flex-direction: column;
+
+      .cards-wrapper {
+        width: 100%;
+        padding: 0.5em;
+
+        img {
+          width: 8em;
+          height: 8em;
+        }
+
+        h6,
+        p {
+          font-size: 0.9em;
+        }
+      }
+    }
   }
 }
