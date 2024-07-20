@@ -63,6 +63,8 @@ $light-color: #ffffff;
     line-height: 1.8;
     margin: 2em auto; /* Centered horizontally with margin */
     opacity: 0.9;
+    font-family: "Righteous", sans-serif;
+    letter-spacing: 0.15em;
     color: $light-color;
     text-align: center;
     padding: 1.5em 2em; /* Added padding for spacing */
@@ -71,8 +73,8 @@ $light-color: #ffffff;
 
 /* Testimonials Section */
 .testimonials-container {
-  background-color: $light-color;
-  color: $primary-color;
+  background-color: #4f1e3e;
+  color: $light-color;
   padding: 2em;
   text-align: center;
 
@@ -83,7 +85,7 @@ $light-color: #ffffff;
   }
 
   .testimonial {
-    background: rgba(32, 2, 22, 0.1);
+    background: rgba(32, 2, 22, 0.349);
     padding: 1.5em;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
