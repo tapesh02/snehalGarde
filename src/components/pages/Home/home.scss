@@ -59,11 +59,10 @@ $light-color: #ffffff;
 /* Header Description Styles */
 .header-description-wrapper {
   .header-description {
-    font-size: 1.2rem;
+    font-size: .8rem;
     line-height: 1.8;
     margin: 2em auto; /* Centered horizontally with margin */
     opacity: 0.9;
-    font-family: "Righteous", sans-serif;
     letter-spacing: 0.15em;
     color: $light-color;
     text-align: center;
